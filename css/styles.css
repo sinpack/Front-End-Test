@@ -1,0 +1,434 @@
+html, body {
+  text-align: center;
+  background-color: white;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+hr {
+  width: 10%;
+  border-top: 3px solid #E2E2E2;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Smooth Scrolling Classes */
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header Section */
+.header {
+  background-color: white;
+}
+
+#header .container-fluid {
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 30px 60px 30px 60px;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  text-align: center;
+  justify-content: center
+}
+
+.nav-link {
+  font-family: 'Myriad Pro Regular', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.navbar-nav>li>a {
+  display: flex;
+  align-items: center;
+  height: 57px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-left: 130px;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav>li>a {
+    display: inline-block;
+    align-items: center;
+    vertical-align: bottom;
+    height: 100%;
+  }
+
+  .navbar-right {
+    padding-left: 0;
+  }
+}
+
+#header .btn {
+  border-radius: 23px;
+  height: 45px;
+  width: 132px;
+  padding: 0 25px 0 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-size: 12px;
+}
+
+/* Carousel-Slider */
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 10vh;
+}
+
+.carousel-indicators li {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+}
+
+#slider .carousel-caption {
+  color: white;
+  text-align: center;
+  height: 20vh;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption>h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  padding: 0;
+}
+
+#slider .btn {
+  background-color: #eb8484;
+  color: white;
+  border-style: none;
+  font-size: 1.7vh;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 0.5rem;
+}
+
+/* Services Section */
+#services {
+  position: relative;
+}
+
+.service-heading {
+  padding: 200px 60px 200px 60px;
+}
+
+.service-quote-container {
+  padding: 0 0 160px 0;
+}
+
+.service-heading-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: calc(0.75em + 1vmin);
+}
+
+.service-title {
+  font-size: calc(0.5em + 1vmin);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 3px;
+  margin-bottom: 0;
+}
+
+.service-box {
+  padding: 0 2% 0 2%;
+}
+
+.service-content {
+  font-size: calc(0.3125em + 1vmin);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #8c9398;
+}
+
+.icon-frame {
+  display: inline-block;
+  background-color: #1f68fd;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .icon-frame {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .icon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .carousel-caption>h1 {
+    font-size: 6.4vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .icon-frame .icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  #slider .btn {
+    font-size: 1.3vh;
+  }
+
+  .logo {
+    width: 4.5rem;
+    height: 2rem;
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .icon-frame .icon {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .icon-frame .icon {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .icon-frame .icon {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+}
+
+/* Newsletter Section */
+#newsletter {
+  padding: 10% 0 10% 0;
+  background: url("../images/newsletter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mail-icon {
+  width: 111px;
+  height: 44px;
+}
+
+.newsletter-title {
+  font-size: calc(0.3125em + 1vmin);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  color: white;
+}
+
+form {
+  padding: 2%;
+  align-items: center;
+}
+
+.form-control {
+  opacity: 0.21;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  height: 100%;
+}
+
+.form-row {
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.send-col {
+  height: 4.0625rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.send {
+  height: 100%;
+  font-size: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+.send-col {
+  height: 2rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .send-col {
+    height: 2.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .send-col {
+    height: 3.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .send-col {
+    height: 4rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .send-col {
+    height: 4.0265rem;
+  }
+}
+
+.row-components {
+  margin-bottom: 0 !important;
+}
+
+/* Footer Section */
+#footer {
+  background-color: black;
+  padding: 3% 0 1% 0;
+}
+
+#footer.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.social-media {
+  padding: 0% 46% 0% 46%;
+}
+
+.social-media-col {
+  padding: 0;
+}
+
+.link-container {
+  padding: 3% 25% 3% 25%;
+}
+
+.link-col {
+  /* padding: 0 5% 0 5%; */
+  text-align: center;
+}
+
+.link {
+  font-family: 'Myriad Pro Regular', Arial, sans-serif;
+  font-size: calc(0.325em + 1vmin);
+  color: #ffffff;
+}
+
+.footer-link {
+  color: white;
+  font-size: 2.5vmin;
+}
+
+.footer-link:hover {
+  color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.copyright {
+  padding: 3% 0 3% 0;
+}
+
+.copyright h5 {
+  color: #dfdfdf;
+  opacity: 0.21;
+  margin-bottom: 0;
+  font-size: calc(0.3em + 1vmin);
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .form-row {
+    flex: auto;
+  }
+}
